@@ -1,0 +1,57 @@
+# === SALADUSED — KÕIGE OLULISEM ===
+# Keskkonna-failid (DB-tunnused, API-võtmed, paroolid)
+.env
+.env.local
+.env.*.local
+
+# WP konfiguratsioon (DB-tunnused, auth-keys)
+wp-config.php
+wp-config-local.php
+
+# Privaatvõtmed ja sertifikaadid
+*.pem
+*.key
+*.p12
+id_rsa
+id_ed25519
+.htpasswd
+
+# === ANDMEBAAS — sisaldab kogu sisu, paroole, kasutaja-andmeid ===
+*.sql
+*.sql.gz
+*.sql.bz2
+db-dump.*
+database.*
+backup.*
+*.bak
+
+# === MIGRATSIOONI-ARHIIVID ===
+wp-content.tar.gz
+*.tar.gz
+*.zip
+
+# === BUILD-VÄLJUND JA SÕLTUVUSED ===
+node_modules/
+vendor/
+dist/
+build/
+
+# === LOGIFAILID ===
+*.log
+error_log
+debug.log
+
+# === CACHE JA GENEREERITUD FAILID ===
+.cache/
+.tmp/
+
+# === OS-PRÜGI ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE SEADED ===
+.idea/
+.vscode/
+*.swp
+*.swo

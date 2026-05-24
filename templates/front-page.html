@@ -1,0 +1,76 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- Hero -->
+<!-- wp:group {
+    "align":"full",
+    "style":{
+        "color":{"background":"#14b8a6"},
+        "spacing":{
+            "padding":{
+                "top":"var:preset|spacing|32",
+                "bottom":"var:preset|spacing|32",
+                "right":"var:preset|spacing|24",
+                "left":"var:preset|spacing|24"
+            }
+        }
+    },
+    "layout":{"type":"constrained"}
+} -->
+<div
+  class="wp-block-group alignfull has-background hero-section"
+  style="background-color: #1d9c8d">
+  <!-- wp:group {
+        "layout":{
+            "type":"flex",
+            "orientation":"vertical",
+            "justifyContent":"center"
+        },
+        "style":{
+            "spacing":{"blockGap":"var:preset|spacing|6"}
+        }
+    } -->
+  <div class="wp-block-group">
+    <!-- wp:heading {
+            "textAlign":"center",
+            "level":1,
+            "textColor":"white"
+        } -->
+    <h1 class="wp-block-heading has-text-align-center has-white-color">
+      Ole tervitatud, külaline !
+    </h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph {
+            "align":"center",
+            "textColor":"white",
+            "style":{
+                "typography":{"fontSize":"1.25rem"}
+            }
+        } -->
+    <p class="has-text-align-center has-white-color" style="font-size: 1.25rem">
+      Sama soe kui on päikese puudutus ilusal suvepäeval saab sul olema, kui
+      avastad meie pakkumised !
+    </p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons">
+      <!-- wp:button {
+        "backgroundColor":"accent",
+        "textColor":"white"
+    } -->
+      <div class="wp-block-button">
+        <a
+          class="wp-block-button__link has-accent-background-color has-white-color has-background wp-element-button"
+        >
+          Alusta siit
+        </a>
+      </div>
+      <!-- /wp:button -->
+    </div>
+    <!-- /wp:buttons -->
+  </div>
+  <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

@@ -1,0 +1,90 @@
+/* -----------------------------------------------------------------------------
+   Buttons — shared hover animation
+   ----------------------------------------------------------------------------- */
+
+.wp-block-button .wp-block-button__link {
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.wp-block-button .wp-block-button__link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.12);
+}
+
+.wp-block-button .wp-block-button__link:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.wp-block-button.is-style-secondary .wp-block-button__link {
+    background-color: var(--wp--preset--color--secondary-dark);
+    color: var(--wp--preset--color--white);
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.wp-block-button.is-style-secondary .wp-block-button__link:hover {
+    background-color: var(--wp--custom--color--teal-600);
+}
+
+.wp-block-button.is-style-secondary .wp-block-button__link:focus-visible {
+    outline: 2px solid var(--wp--preset--color--secondary);
+    outline-offset: 3px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Buttons — outline variant
+   ----------------------------------------------------------------------------- */
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent;
+    color: var(--wp--preset--color--primary);
+    border: 2px solid var(--wp--preset--color--primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+    background-color: var(--wp--preset--color--primary-light);
+    color: var(--wp--preset--color--primary-dark);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:focus-visible {
+    outline: 2px solid var(--wp--preset--color--primary);
+    outline-offset: 3px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   Buttons — outline-secondary variant
+   ----------------------------------------------------------------------------- */
+
+.wp-block-button.is-style-outline-secondary .wp-block-button__link {
+    background-color: transparent;
+    color: var(--wp--preset--color--secondary);
+    border: 2px solid var(--wp--preset--color--secondary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.wp-block-button.is-style-outline-secondary .wp-block-button__link:hover {
+    background-color: var(--wp--preset--color--secondary-light);
+    color: var(--wp--preset--color--secondary-dark);
+}
+
+.wp-block-button.is-style-outline-secondary .wp-block-button__link:focus-visible {
+    outline: 2px solid var(--wp--preset--color--secondary);
+    outline-offset: 3px;
+}
+
+.hero-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.wp-block-group:first-child {
+    gap: 2rem;
+}
